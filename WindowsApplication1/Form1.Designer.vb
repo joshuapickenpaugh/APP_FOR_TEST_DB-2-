@@ -22,9 +22,40 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.lstBoxPersons = New System.Windows.Forms.ListBox()
+        Me.btnClick = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'lstBoxPersons
+        '
+        Me.lstBoxPersons.FormattingEnabled = True
+        Me.lstBoxPersons.Location = New System.Drawing.Point(13, 13)
+        Me.lstBoxPersons.Name = "lstBoxPersons"
+        Me.lstBoxPersons.Size = New System.Drawing.Size(120, 95)
+        Me.lstBoxPersons.TabIndex = 0
+        '
+        'btnClick
+        '
+        Me.btnClick.Location = New System.Drawing.Point(13, 115)
+        Me.btnClick.Name = "btnClick"
+        Me.btnClick.Size = New System.Drawing.Size(120, 23)
+        Me.btnClick.TabIndex = 1
+        Me.btnClick.Text = "Show Persons"
+        Me.btnClick.UseVisualStyleBackColor = True
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(147, 156)
+        Me.Controls.Add(Me.btnClick)
+        Me.Controls.Add(Me.lstBoxPersons)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents lstBoxPersons As ListBox
+    Friend WithEvents btnClick As Button
 End Class
